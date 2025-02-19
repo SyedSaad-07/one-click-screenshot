@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "One-Click Screenshot",
+    "version": "1.0",
+    "description": "Capture and download a screenshot of the current tab.",
+    "permissions": ["activeTab", "downloads"],
+    "host_permissions": ["<all_urls>"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png"
+    }
+}  
